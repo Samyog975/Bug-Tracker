@@ -4,7 +4,7 @@ import About from './pages/About';
 import SignIn from "./pages/Signin";
 import SignUp from './pages/Signup';
 import Dashboard from './pages/Dashboard';
-import Projects from './pages/Projects';
+import BugList from './pages/BugList';
 import Header from './components/Header';
 
 
@@ -18,7 +18,7 @@ export default function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/buglist" element={<BugList />} />
 
       </Routes>
     
