@@ -6,6 +6,7 @@ import SignUp from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import BugList from './pages/BugList';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 export default function App() {
@@ -21,7 +22,7 @@ export default function App() {
         <Route path="/buglist" element={<BugList />} />
 
       </Routes>
-    
+        <Footer />
     </BrowserRouter>
   )
 }
