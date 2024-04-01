@@ -13,7 +13,7 @@ export default function Signup() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.username  || !formData.password || formData.password) {
+    if (!formData.username || !formData.email || !formData.password) {
       return setErrorMessage("Please fill out all fields.");
     }
     try {
@@ -82,7 +82,7 @@ export default function Signup() {
               placeholder='Password'
               id="password" onChange={handleChange}/>
           </div>
-          <Button gradientDuoTone='purpleToPink' type='submit' disabaled={loading}>
+          <Button gradientDuoTone='purpleToPink' type='submit' disabled={loading}>
             {
               loading ? (
                 <>
